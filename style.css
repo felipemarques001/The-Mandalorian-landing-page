@@ -31,12 +31,12 @@ body {
 }
 
 .information-section {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .information-section h2 {
     color: var(--text-color-primary);
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 20px;
 }
 
@@ -199,5 +199,37 @@ header input:checked ~ nav {
 .videos-section a img {
     margin-right: 25px;
     width: 60%;
+}
+
+.disney-price {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    color: var(--text-color-primary);
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.disney-price h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.disney-price p {
+    font-size: 1.6rem;
+}
+
+.disney-price p:last-child {
+    text-align: center;
+    width: 80%;
+}
+
+.disney-price span {
+    margin: -20px 0;
+    font-size: 7rem;
+    font-family: 'Koulen', cursive;
 }
 
