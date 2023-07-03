@@ -31,7 +31,7 @@ body {
 }
 
 .information-section {
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 .information-section h2 {
@@ -231,5 +231,44 @@ header input:checked ~ nav {
     margin: -20px 0;
     font-size: 7rem;
     font-family: 'Koulen', cursive;
+}
+
+.social-medias {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #111a29;
+    width: 100vw;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.social-medias h4 {
+    color: var(--text-color-primary);
+    font-size: 1.6rem;
+}
+
+.social-medias div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.social-medias a {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    padding: 8px;
+}
+
+.social-medias p {
+    margin-top: 30px;
+    font-size: 1.4rem;
 }
 
