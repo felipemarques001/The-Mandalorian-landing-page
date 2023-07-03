@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Condensed:wght@300;700&display=swap');
+
+:root {
+    --text-color-secondary: #8d96a7;
+    --text-color-primary: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--text-color-secondary);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+}
+
+.section {
+    width: 95%;
+    margin: auto;
+}
+
+
+
+.bg-header-headline {
+    background-image: url(assets/images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    background-color: rgba(255,255,255,0.06);
+    padding: 0.5rem;
+    border-radius: 0 0 1rem 1rem;
+}
+header h1 {
+    color: var(--text-color-primary);
+    font-size: 1.8rem;
+}
+
+header input {
+    display: none;
+}
+
+header label {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+header label span {
+    background-color: var(--text-color-primary);
+    display: block;
+    cursor: pointer;
+    width: 2.2rem;
+    height: 0.3rem;
+    margin: 0.2rem;
+    transition: all 300ms ease-in-out;
+}
+
+header input:checked ~ label span:nth-child(2){
+    display: none;
+}
+
+header input:checked ~ label span:first-child {
+    transform: rotate(45deg) translateY(5px) translateX(5px);
+}
+
+header input:checked ~ label span:last-child {
+    transform: rotate(-45deg);
+}
+
+header input:checked ~ nav {
+    display: inline;
+}
+
+.nav-bar {
+    display: none;
+    padding-top: 1.5rem;
+    flex-basis: 100%;
+}
+
+.nav-bar ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-bar ul li {
+    padding: 0.3rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    margin-bottom: 0.5rem;
+    width: 90%;
+}
+
+.nav-bar ul li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.nav-bar ul li a {
+    color: var(--text-color-primary);
+    text-decoration: none;
+    font-size: 1.6rem;
+}
