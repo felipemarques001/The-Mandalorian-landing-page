@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Condensed:wght@300;700&display=swap');
 
+/* INITIAL CONFIGURATIONS */
+
 :root {
     --text-color-secondary: #8d96a7;
     --text-color-primary: #fff;
@@ -24,6 +26,8 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
 }
+
+/* ------------------ */
 
 /* IMPORTANT CLASSES */
 
@@ -349,6 +353,10 @@ footer {
 @media only screen and (min-width: 1000px) {
     .section {
         width: 75vw;
+    }
+
+    .information-section h2 {
+        font-size: 2.5rem;
     }
     
     header {
