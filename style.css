@@ -160,6 +160,7 @@ header input:checked ~ nav {
 
 .headline-links {
     display: flex;
+    margin-top: 5px;
 }
 
 .headline-links a {
@@ -284,10 +285,6 @@ footer {
 }
 
 @media only screen and (min-width: 800px) {
-    .headline-links a {
-        font-size: 1.6rem;
-    }
-
     .about-serie p {
         font-size: 1.6rem;
     }
@@ -352,43 +349,43 @@ footer {
     header {
         left: calc(100vw - 90vw);
     }
-
-    .social-medias {
-        width: 100vw;
+    
+    .headline h1 {
+        font-size: 5rem;
+        line-height: 50px;
     }
     
+    .headline-links a {
+        font-size: 1.6rem;
+    }
 }
 
 @media only screen and (min-width: 1100px) { 
     header {
         left: calc(100vw - 80vw);
     }
+
 }
 
 @media only screen and (min-width: 1200px) {
     .section {
         width: 70%;
     }
+
+    .about-serie p {
+        font-size: 1.8rem;
+    }
 }
 
 @media only screen and (min-width: 1350px) { 
     .section {
         width: 65%;
-        margin-bottom: 70px;
-    }
-    
-    .social-medias.section {
-        margin-bottom: 0;
     }
 }
 
 @media only screen and (min-width: 1500px) {  
     .section {
         width: 60%;
-    }
-
-    .social-medias.section {
-        margin-bottom: 0;
     }
 }
 
