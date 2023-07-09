@@ -3,6 +3,7 @@
 :root {
     --text-color-secondary: #8d96a7;
     --text-color-primary: #fff;
+    --background-color-primary: #162336;
 }
 
 * {
@@ -18,7 +19,7 @@ html {
 }
 
 body {
-    background-color: #162336;
+    background-color: var(--background-color-primary);
     color: var(--text-color-secondary);
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
@@ -27,18 +28,18 @@ body {
 /* IMPORTANT CLASSES */
 
 .section {
-    width: 95%;
+    width: 95vw;
     margin: auto;
 }
 
 .information-section {
-    margin-top: 50px;
+    margin-top: 5rem;
 }
 
 .information-section h2 {
     color: var(--text-color-primary);
     font-size: 2.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 /* ------------------ */
@@ -60,7 +61,7 @@ header {
     align-items: center;
     position: absolute;
     top: 0;
-    left: calc(100vw - 97.5vw); /* Para que o header fique alinhado com as outras seções */
+    left: calc(100vw - 97.5vw); /* This makes the header line up with the other sections */
     border-bottom: 1px solid rgba(255,255,255,0.08);
     background-color: rgba(255,255,255,0.06);
     padding: 1rem;
@@ -113,12 +114,12 @@ header input:checked ~ nav {
 }
 
 .nav-bar ul {
-    width: 100%;
     list-style: none;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     text-align: center;
+    width: 100%;
 }
 
 .nav-bar ul li {
@@ -168,8 +169,8 @@ header input:checked ~ nav {
     background-color: #000;
     color: var(--text-color-primary);
     font-size: 1.4rem;
-    padding: 10px 20px;
-    margin-right: 10px;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
 }
 
 .headline-links a:last-child {
@@ -181,7 +182,7 @@ header input:checked ~ nav {
 .about-serie img {
     float: left;
     width: 40%;
-    margin-right: 5px;
+    margin-right: 0.5rem;
 }
 
 .about-serie p {
@@ -216,15 +217,15 @@ header input:checked ~ nav {
     align-items: center;
     color: var(--text-color-primary);
     background-color: rgba(255,255,255,0.08);
-    border-radius: 10px;
-    padding: 40px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    border-radius: 1rem;
+    padding: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .disney-price h3 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .disney-price p {
@@ -237,7 +238,7 @@ header input:checked ~ nav {
 }
 
 .disney-price span {
-    margin: -20px 0;
+    margin: -2rem 0;
     font-size: 6rem;
     font-family: 'Koulen', cursive;
 }
@@ -251,8 +252,8 @@ footer {
     flex-flow: column wrap;
     align-items: center;
     width: 100vw;
-    margin-top: 50px;
-    padding: 20px 0;
+    margin-top: 5rem;
+    padding: 2rem 0;
 }
 
 .social-medias h4 {
@@ -264,23 +265,23 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 1.5rem;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .social-medias a {
     display: flex;
     justify-content: center;
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
+    width: 3.5rem;
+    height: 3.5rem;
     background-color: white;
-    padding: 8px;
+    padding: 0.8rem;
 }
 
 .social-medias p {
-    margin-top: 30px;
+    margin-top: 3rem;
     font-size: 1.4rem;
 }
 
@@ -290,13 +291,17 @@ footer {
     }
 
     .grid-images a img {
-        width: 300px;
+        width: 30rem;
     }
 }
 
 @media only screen and (min-width: 900px) {
     .section {
-        width: 80%;
+        width: 80vw;
+    }
+
+    header {
+        left: calc(100vw - 90vw);
     }
 
     header label {
@@ -316,7 +321,7 @@ footer {
         text-align: center;
         width: auto;
         list-style: none;
-        gap: 20px;
+        gap: 2rem;
     }
     
     .nav-bar ul li {
@@ -343,16 +348,16 @@ footer {
 
 @media only screen and (min-width: 1000px) {
     .section {
-        width: 75%;
+        width: 75vw;
     }
     
     header {
-        left: calc(100vw - 90vw);
+        left: calc(100vw - 87.5vw);
     }
-    
+
     .headline h1 {
         font-size: 5rem;
-        line-height: 50px;
+        line-height: 5rem;
     }
     
     .headline-links a {
@@ -360,16 +365,13 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1100px) { 
-    header {
-        left: calc(100vw - 80vw);
-    }
-
-}
-
 @media only screen and (min-width: 1200px) {
     .section {
-        width: 70%;
+        width: 70vw;
+    }
+
+    header {
+        left: calc(100vw - 85vw);
     }
 
     .about-serie p {
@@ -379,25 +381,49 @@ footer {
 
 @media only screen and (min-width: 1350px) { 
     .section {
-        width: 65%;
+        width: 65vw;
+    }
+
+    header {
+        left: calc(100vw - 82.5vw);
+    }
+
+    .about-serie img {
+        width: 30.5rem;
     }
 }
 
 @media only screen and (min-width: 1500px) {  
     .section {
-        width: 60%;
+        width: 60vw;
+    }
+
+    header {
+        left: calc(100vw - 80vw);
+    }
+
+    .about-serie img {
+        width: 40rem;
     }
 }
 
 @media only screen and (min-width: 1700px) {
     .section {
-        width: 55%;
+        width: 55vw;
+    }
+
+    header {
+        left: calc(100vw - 77.5vw);
     }
 }
 
 @media only screen and (min-width: 1800px) {
     .section {
-        width: 50%;
+        width: 50vw;
+    }
+
+    header {
+        left: calc(100vw - 75vw);
     }
 }
 
