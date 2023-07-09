@@ -237,15 +237,18 @@ header input:checked ~ nav {
 
 .disney-price span {
     margin: -20px 0;
-    font-size: 7rem;
+    font-size: 6rem;
     font-family: 'Koulen', cursive;
+}
+
+footer {
+    background-color: #111a29;
 }
 
 .social-medias {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    background-color: #111a29;
     width: 100vw;
     margin-top: 50px;
     padding: 20px 0;
@@ -371,12 +374,9 @@ header input:checked ~ nav {
 @media only screen and (min-width: 1350px) { 
     .section {
         width: 65%;
-    }
-    
-    .section {
         margin-bottom: 70px;
     }
-
+    
     .social-medias.section {
         margin-bottom: 0;
     }
